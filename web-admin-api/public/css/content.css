@@ -1,0 +1,42 @@
+.bodyDiv{
+  /*padding: 0.5rem;*/
+  background: transparent;
+  overflow: auto;
+}
+.bodyDiv .content p img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bodyDiv .contentDiv{
+  padding-top: 1rem;
+}
+
+.footDiv{
+  position: relative;
+  height: 3.5rem;
+  padding-bottom: 0.5rem;
+}
+.footDiv .backA{
+  display: inline-block;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  width: 4.7rem;
+  height: 2rem;
+}
+.footDiv .backA img{
+  width: 100%;
+  height: 100%;
+}
+.textP img{
+  float: none !important;
+  /* width: 100% !important; */
+}
+.textP img{
+  float: none !important;
+  /*width: 100% !important;*/
+}
+html,body,.bodyDiv{
+  height: 100%;
+}

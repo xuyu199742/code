@@ -1,0 +1,16 @@
+
+留存率中存储过程更新说明
+先运行建表脚本，在运行存储过程脚本，最后运行作业
+先运行建表脚本，在运行存储过程脚本，最后运行作业
+先运行建表脚本，在运行存储过程脚本，最后运行作业
+重要的事说三遍
+1、先删除WHQJAccountsDB库中的两个存储过程
+   dbo.GSP_recharge_channels_statistics
+   dbo.GSP_recharge_rates_statistics
+   dbo.GSP_retention_channels_statistics
+
+2、分别执行
+  	GSP_recharge_channels_statistics.sql
+    GSP_recharge_rates_statistics.sql
+	GSP_retention_channels_statistics.sql
+   文件，生成新的存储过程。

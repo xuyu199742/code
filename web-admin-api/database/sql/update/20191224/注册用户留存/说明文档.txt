@@ -1,0 +1,22 @@
+
+一、部署时先删除之前的 WHQJAccountsDB 两个存储过程
+
+1、GSP_retention_statistics.sql
+2、GSP_retention_channels_statistics.sql
+
+
+二、再删除SQL Server 代理-作业 中的两个作业
+
+1、留存统计-留存.sql
+2、留存按渠道统计.sql
+
+
+三、先执行存储过程：
+   
+    GSP_register_retention_statistics.sql
+   
+    再执行作业：
+
+    注册用户留存统计_作业.sql
+
+   备注：不删除之前的，数据会重复写入。
